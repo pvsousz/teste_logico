@@ -2,8 +2,6 @@ import java.util.Scanner;
 public class quest2 {
     public static void main(String[] args) {
     
-        
-
         Scanner teclado = new Scanner(System.in);
         
         System.out.println("Digite um número:");
@@ -15,7 +13,6 @@ public class quest2 {
         }else{
             System.out.println("Não é um número Fibonacci");
         }
-
     }
 
         public static boolean verificarNumero(int numero){
