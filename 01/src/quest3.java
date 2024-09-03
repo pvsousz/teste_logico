@@ -1,11 +1,11 @@
 public class quest3 {
-    public static void main(String[] args) {
- // 3) -
-// a) 9
-// b) 128
-// c)49
-// d)100
-// e)13
-// f)200
-    }
+    public static void main(String[] args) throws Exception {
+        int indice = 13, SOMA = 0 ,K =0;
+
+        while (K<indice) {
+            K = K +1;
+            SOMA = SOMA +K;
+        }
+        System.out.println("O valor da variável SOMA = "+ SOMA);
+    }   
 }

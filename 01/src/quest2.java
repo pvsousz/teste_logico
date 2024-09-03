@@ -1,33 +1,23 @@
 import java.util.Scanner;
+
 public class quest2 {
     public static void main(String[] args) {
-    
         Scanner teclado = new Scanner(System.in);
-        
-        System.out.println("Digite um número:");
-        int numero_digitado = teclado.nextInt();
+        System.out.println("Digite uma palavra:");
+        char letra = 0;
+        int quantidade = 0;
+        String palavra = teclado.nextLine();
 
-        if (verificarNumero(numero_digitado)) {
-            System.out.println("É um número fibonacci");
-            
-        }else{
-            System.out.println("Não é um número Fibonacci");
+        for(int i = 0; i<palavra.length();i++){
+          letra = palavra.charAt(i);
+          
+          if (letra == 'a'||letra == Character.toUpperCase('a')) {
+            quantidade = quantidade +1;
+          }
+          
         }
+        System.out.println(quantidade);
+
     }
-
-        public static boolean verificarNumero(int numero){
-            int n1 = 0;
-            int n2 = 1;
-
-            while (n2 < numero) {
-                int variavel = n2;
-                n2 = n1 + n2;
-                n1 = variavel;
-                if (n2 == numero) {
-                    return true;
-                }
-            
-            }
-            return false;
-        }
+    
 }
